@@ -1,0 +1,110 @@
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+
+.navigation-wrapper,
+.site-branding {
+  position: fixed;
+  z-index: 20;
+}
+
+.site-branding {
+  top: 50px;
+  left: 60px;
+  max-width: 400px;
+  width: auto;
+}
+
+.custom-logo-wrapper,
+.site-branding-text {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.custom-logo-wrapper {
+  margin-right: 20px;
+  margin-bottom: 20px;
+  max-width: 150px;
+}
+
+.site-title {
+  font-weight: bold;
+  line-height: 1;
+}
+
+.site-title > a {
+  text-decoration: none;
+  font-weight: inherit;
+}
+
+.navigation-wrapper {
+  top: 50px;
+  right: 60px;
+  max-width: calc(100vw - 120px - 450px);
+  width: auto;
+}
+
+.has-sidebar .navigation-wrapper .main-navigation {
+  padding-right: 60px;
+}
+.navigation-wrapper .sidebar-button {
+  position: absolute;
+  right: 0;
+  margin-right: -10px;
+}
+
+.site-title,
+.site-description {
+  margin: 0;
+}
+
+/* social menu */
+
+.social-wrapper {
+  max-width: 80vh;
+  position: fixed;
+  bottom: 50px;
+  left: 60px;
+  text-align: right;
+  -webkit-transform: rotate(90deg) translate(-100%, 0);
+  -moz-transform: rotate(90deg) translate(-100%, 0);
+  -ms-transform: rotate(90deg) translate(-100%, 0);
+  -o-transform: rotate(90deg) translate(-100%, 0);
+  transform: rotate(90deg) translate(-100%, 0);
+  -webkit-transform-origin: left bottom;
+  -moz-transform-origin: left bottom;
+  -ms-transform-origin: left bottom;
+  -o-transform-origin: left bottom;
+  transform-origin: left bottom;
+  z-index: 20;
+}
+
+body .jetpack-social-navigation ul {
+  margin: 0;
+}
+
+body .jetpack-social-navigation li:not(:first-child) {
+  margin-left: 10px;
+}
+
+body .jetpack-social-navigation a {
+  height: auto;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: auto;
+  font-weight: 700;
+  padding: 5px;
+}
+
+.jetpack-social-navigation a:before {
+  display: none !important;
+}
+
+.jetpack-social-navigation a span.screen-reader-text {
+  clip: auto;
+  position: static !important;
+  height: auto;
+  margin: 0;
+  width: auto;
+  overflow: auto;
+}

@@ -1,0 +1,98 @@
+/*--------------------------------------------------------------
+# Infinite scroll
+--------------------------------------------------------------*/
+/* Globally hidden elements when Infinite Scroll is supported and in use. */
+.infinite-scroll .paging-navigation,
+.infinite-scroll .posts-navigation, /* Older / Newer Posts Navigation (always hidden) */
+.infinite-scroll.neverending .site-footer { /* Theme Footer (when set to scrolling) */
+  display: none;
+}
+
+#infinite-handle,
+.infinite-loader {
+  min-height: 40px;
+}
+
+.portfolio-grid .portfolio-archive #infinite-handle {
+  width: 100%;
+}
+
+.archive-list #infinite-handle,
+.archive-list .infinite-loader,
+.portfolio-archive #infinite-handle,
+.portfolio-archive .infinite-loader {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 15vh;
+}
+
+body #infinite-handle span {
+  background: transparent;
+  border-radius: 0;
+  padding: 6px;
+  font-weight: 500;
+}
+
+.archive-list .infinite-loader {
+  position: fixed;
+  bottom: calc(50vh - 15vh - 80px);
+  left: 50%;
+  padding: 0;
+}
+
+.portfolio-grid .portfolio-archive .infinite-loader {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  padding: 0;
+}
+
+@keyframes pulse {
+  from {
+    -webkit-transform: scale(0.3);
+    -moz-transform: scale(0.3);
+    -ms-transform: scale(0.3);
+    -o-transform: scale(0.3);
+    transform: scale(0.3);
+    opacity: .4;
+  }
+  to {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    opacity: .1;
+  }
+}
+
+.infinite-loader:before {
+  content: '';
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-left: -15px;
+  -webkit-animation: pulse .6s ease infinite alternate;
+  -o-animation: pulse .6s ease infinite alternate;
+  animation: pulse .6s ease infinite alternate;
+}
+
+.portfolio-archive .infinite-loader:before {
+  margin: 0 auto;
+}
+
+.infinite-loader .spinner {
+  display: none;
+}
+
+.portfolio-archive #infinite-handle,
+.portfolio-archive .infinite-loader,
+.portfolio-archive .paging-navigation {
+  clear: both;
+}
+
+/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
+.infinity-end.neverending .site-footer {
+  display: block;
+}
