@@ -1,0 +1,298 @@
+/*
+Theme Name: Deppo
+Theme URI: http://deppo.tkdemos.com/
+Author: Themes Kingdom
+Author URI: http://www.themeskingdom.com
+Description: deppo portfolio theme
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: deppo
+Tags:
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+deppo is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+
+body#tinymce.wp-editor {
+    font-family: 'HK Grotesk', 'Helvetica Neue', Helvetica, Verdana, sans-serif;
+    margin: 10px auto;
+    max-width: 700px;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -moz-font-smoothing: grayscale;
+}
+
+body#tinymce.wp-editor.post-type-page,
+body#tinymce.wp-editor.post-type-jetpack-portfolio {
+    max-width: 1300px;
+}
+
+body#tinymce.wp-editor a {
+    color: #4CA6CF;
+}
+
+body#tinymce.wp-editor h1,
+.post-type-jetpack-portfolio .emphasis,
+.post-type-page .emphasis {
+	font-size: 72px;
+	font-size: 4.5rem;
+}
+
+body#tinymce.wp-editor h2 {
+	font-size: 60px;
+	font-size: 3.75rem;
+}
+
+body#tinymce.wp-editor h3 {
+	font-size: 48px;
+	font-size: 3rem;
+}
+
+body#tinymce.wp-editor h4 {
+	font-size: 36px;
+	font-size: 2.25rem;
+}
+
+body#tinymce.wp-editor h5,
+
+body#tinymce.wp-editor .form-submit input[type="submit"],
+.emphasis,
+body#tinymce.wp-editor blockquote,
+body#tinymce.wp-editor q {
+	font-size: 30px;
+	font-size: 1.875rem;
+}
+
+body#tinymce.wp-editor h6 {
+	font-size: 24px;
+	font-size: 1.5rem;
+}
+
+body#tinymce.wp-editor cite {
+	font-size: 18px;
+}
+
+/* weight */
+
+body#tinymce.wp-editor h1,
+body#tinymce.wp-editor h2,
+body#tinymce.wp-editor h3,
+body#tinymce.wp-editor h4,
+body#tinymce.wp-editor h5,
+body#tinymce.wp-editor h6 {
+	font-weight: bold;
+	font-weight: 700;
+}
+
+/* decoration */
+
+.post-type-jetpack-portfolio .emphasis,
+.post-type-page .emphasis {
+	line-height: 1.1111;
+	font-weight: 500;
+	letter-spacing: -0.01em;
+}
+
+body#tinymce.wp-editor p > a {
+	text-decoration: underline;
+}
+
+body#tinymce.wp-editor hr {
+	background-color: #ccc;
+	border: 0;
+	height: 1px;
+	margin-bottom: 1.5em;
+}
+
+body#tinymce.wp-editor ul,
+body#tinymce.wp-editor ol {
+	margin: 0 0 1.5em;
+	padding-left: 20px;
+}
+
+body#tinymce.wp-editor ul {
+	list-style: square;
+}
+
+body#tinymce.wp-editor ol {
+	list-style: decimal;
+}
+
+body#tinymce.wp-editor li > ul,
+body#tinymce.wp-editor li > ol {
+	margin-bottom: 0;
+	margin-left: 0.5em;
+}
+
+body#tinymce.wp-editor dt {
+	font-weight: bold;
+}
+
+body#tinymce.wp-editor dd {
+	margin: 0 1.5em 1.5em;
+}
+
+body#tinymce.wp-editor figure {
+	margin: 1em 0; /* Extra wide images within figure tags don't overflow the content area. */
+}
+
+body#tinymce.wp-editor table {
+	margin: 0 0 1.5em;
+	width: 100%;
+}
+
+body#tinymce.wp-editor blockquote > :first-child {
+	margin-top: 0;
+}
+
+body#tinymce.wp-editor blockquote > :last-child {
+	margin-bottom: 0;
+}
+
+body#tinymce.wp-editor blockquote,
+body#tinymce.wp-editor q {
+	padding-left: 80px;
+	padding-right: 40px;
+}
+
+body#tinymce.wp-editor td,
+body#tinymce.wp-editor th {
+	border: 1px solid #000;
+	text-align: initial;
+	padding: .5em 1em;
+}
+
+.emphasis,
+body#tinymce.wp-editor blockquote,
+body#tinymce.wp-editor q {
+	line-height: 1.6;
+	letter-spacing: -0.01em;
+	font-weight: 500;
+}
+
+body#tinymce.wp-editor blockquote,
+body#tinymce.wp-editor q {
+	font-weight: 700;
+}
+
+body#tinymce.wp-editor a,
+body#tinymce.wp-editor a:visited {
+	color: #000;
+}
+
+body#tinymce.wp-editor a:hover,
+body#tinymce.wp-editor a:focus,
+body#tinymce.wp-editor a:active {
+	color: rgba(0,0,0,.5);
+}
+
+body#tinymce.wp-editor td,
+body#tinymce.wp-editor th {
+	border-color: #000;
+}
+
+body#tinymce.wp-editor .twocolumn {
+	margin-top: 3em;
+	margin-bottom: 3em;
+}
+
+body#tinymce.wp-editor .twocolumn > div {
+	display: inline-block;
+	vertical-align: top;
+	width: 49%;
+	box-sizing: border-box;
+}
+
+body#tinymce.wp-editor .twocolumn>div:nth-child(odd) {
+	padding-right: 20px;
+}
+
+body#tinymce.wp-editor .twocolumn>div:nth-child(even) {
+	padding-left: 20px;
+}
+
+body#tinymce.wp-editor figure.size-full,
+body#tinymce.wp-editor img,
+body#tinymce.wp-editor p>img {
+	margin-bottom: 1.5rem;
+	margin-top: 0.5rem;
+}
+
+body#tinymce.wp-editor figure.aligncenter,
+body#tinymce.wp-editor img.aligncenter {
+	margin-bottom: 3rem;
+	margin-top: 3rem;
+}
+
+body#tinymce.wp-editor .hoverimage {
+	display: inline-block;
+	position: relative;
+}
+
+body#tinymce.wp-editor .hoverimage:hover,
+body#tinymce.wp-editor .hoverimage:focus,
+body#tinymce.wp-editor .hoverimage:active {
+	z-index: 2;
+}
+
+body#tinymce.wp-editor .hoverimage img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	will-change: opacity;
+	opacity: .2;
+	visibility: visible;
+	margin: 0 !important;
+	float: none;
+	display: block;
+	z-index: -1;
+	max-width: 30vw;
+	-webkit-transition: .2s, visibility 0s .2s;
+	-moz-transition: .2s, visibility 0s .2s;
+	-ms-transition: .2s, visibility 0s .2s;
+	-o-transition: .2s, visibility 0s .2s;
+	transition: .2s, visibility 0s .2s;
+}
+
+body#tinymce.wp-editor .hoverimage strong:hover {
+	opacity: 0;
+}
+
+body#tinymce.wp-editor .hoverimage strong:hover + img {
+	opacity: 1;
+	visibility: visible;
+	-webkit-transition: .2s, visibility 0s;
+	-moz-transition: .2s, visibility 0s;
+	-ms-transition: .2s, visibility 0s;
+	-o-transition: .2s, visibility 0s;
+	transition: .2s, visibility 0s;
+}
+
+
+
+
+
+

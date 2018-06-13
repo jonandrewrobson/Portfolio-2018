@@ -1,0 +1,47 @@
+
+---Downloaded files---
+The import files for: Deppo Demo 1 were successfully downloaded!
+Initial max execution time = 300
+Files info:
+Site URL = http://deppo-3.tkdemos.com
+Data file = /var/www/deppo-3.tkdemos.com/htdocs/wp-content/uploads/2017/10/demo-content-import-file_2017-10-24__09-20-32.xml
+Widget file = /var/www/deppo-3.tkdemos.com/htdocs/wp-content/uploads/2017/10/demo-widgets-import-file_2017-10-24__09-20-32.json
+Customizer file = /var/www/deppo-3.tkdemos.com/htdocs/wp-content/uploads/2017/10/demo-customizer-import-file_2017-10-24__09-20-32.dat
+Redux files:
+not defined!
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+---Importing widgets---
+Sidebar : 
+
+Text - Info - Imported
+Categories - Categories - Imported
+Custom Menu - Follow - Imported
+
+
+
+---Importing customizer settings---
+Customizer settings import finished!
