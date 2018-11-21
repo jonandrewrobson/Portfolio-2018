@@ -1,0 +1,17 @@
+{
+  "name": "deppo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "say-hello": "echo 'Hello World'",
+    "scss": "node-sass --watch assets/sass -o assets/css && npm run say-hello"
+
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.10.0"
+  }
+}
