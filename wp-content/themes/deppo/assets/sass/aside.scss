@@ -1,0 +1,190 @@
+/*--------------------------------------------------------------
+# Aside
+--------------------------------------------------------------*/
+
+.sidebar-hide-scroll {
+  background-color: #fff;
+  height: 100%;
+  max-width: 100vw;
+  overflow: hidden;
+  width: auto;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 15;
+}
+
+.sidebar-hide-scroll,
+.leaving.sidebar-open .sidebar-hide-scroll {
+  -webkit-transform: translateX(100%);
+  -moz-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  -o-transform: translateX(100%);
+  transform: translateX(100%);
+}
+
+.sidebar-open .sidebar-hide-scroll {
+  -webkit-transform: none;
+  -moz-transform: none;
+  -ms-transform: none;
+  -o-transform: none;
+  transform: none;
+}
+
+#secondary > .widget {
+  -webkit-transform: translateX(20px);
+  -moz-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  -o-transform: translateX(20px);
+  transform: translateX(20px);
+  opacity: 0;
+}
+.sidebar-open #secondary > .widget {
+  -webkit-transform: none;
+  -moz-transform: none;
+  -ms-transform: none;
+  -o-transform: none;
+  transform: none;
+  opacity: 1;
+  -webkit-transition: .2s .8s linear;
+  -moz-transition: .2s .8s linear;
+  -ms-transition: .2s .8s linear;
+  -o-transition: .2s .8s linear;
+  transition: .2s .8s linear;
+}
+
+.sidebar-open #secondary > .widget:nth-child(1) {
+  -webkit-transition-delay: .4s;
+  -moz-transition-delay: .4s;
+  -ms-transition-delay: .4s;
+  -o-transition-delay: .4s;
+  transition-delay: .4s;
+}
+
+.sidebar-open #secondary > .widget:nth-child(2) {
+  -webkit-transition-delay: .5s;
+  -moz-transition-delay: .5s;
+  -ms-transition-delay: .5s;
+  -o-transition-delay: .5s;
+  transition-delay: .5s;
+}
+
+.sidebar-open #secondary > .widget:nth-child(3) {
+  -webkit-transition-delay: .6s;
+  -moz-transition-delay: .6s;
+  -ms-transition-delay: .6s;
+  -o-transition-delay: .6s;
+  transition-delay: .6s;
+}
+
+.sidebar-open #secondary > .widget:nth-child(3) {
+  -webkit-transition-delay: .7s;
+  -moz-transition-delay: .7s;
+  -ms-transition-delay: .7s;
+  -o-transition-delay: .7s;
+  transition-delay: .7s;
+}
+
+#content,
+.sidebar-hide-scroll {
+  -webkit-transition: transform .4s cubic-bezier(0.075, 0.82, 0.165, 1);
+  -moz-transition: transform .4s cubic-bezier(0.075, 0.82, 0.165, 1);
+  -ms-transition: transform .4s cubic-bezier(0.075, 0.82, 0.165, 1);
+  -o-transition: transform .4s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: transform .4s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.sidebar-holder {
+  display: block;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.big-search {
+  margin: 250px 60px 100px 70px;
+  max-width: 440px;
+}
+
+#secondary {
+  padding: 100px 60px 80px 70px;
+}
+
+.widget-area .widget {
+  width: 100%;
+  max-width: 440px;
+}
+
+.sidebar-icon {
+  display: block;
+  font-size: 0;
+  height: 20px;
+  padding: 5px;
+  position: relative;
+  width: 19px;
+}
+
+.sidebar-icon i {
+  display: block;
+  height: 1px;
+  width: 10px;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  -webkit-transform-origin: center center;
+  -moz-transform-origin: center center;
+  -ms-transform-origin: center center;
+  -o-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-transition: .1s;
+  -moz-transition: .1s;
+  -ms-transition: .1s;
+  -o-transition: .1s;
+  transition: .1s;
+}
+
+.sidebar-icon i:nth-child(1) {
+  top: 5px;
+}
+
+.sidebar-icon i:nth-child(2) {
+  top: 10px;
+}
+
+.sidebar-icon i:nth-child(3) {
+  top: 15px;
+}
+
+.sidebar-toggle:hover .sidebar-icon i {
+  width: 14px;
+}
+
+.sidebar-open .sidebar-icon i:nth-child(1),
+.sidebar-open .sidebar-icon i:nth-child(3) {
+  top: 10px;
+}
+
+.sidebar-open .sidebar-icon i:nth-child(1) {
+  -webkit-transform: translateX(-50%) rotate(45deg);
+  -moz-transform: translateX(-50%) rotate(45deg);
+  -ms-transform: translateX(-50%) rotate(45deg);
+  -o-transform: translateX(-50%) rotate(45deg);
+  transform: translateX(-50%) rotate(45deg);
+}
+
+.sidebar-open .sidebar-icon i:nth-child(2) {
+  opacity: 0;
+}
+
+.sidebar-open .sidebar-icon i:nth-child(3) {
+  -webkit-transform: translateX(-50%) rotate(-45deg);
+  -moz-transform: translateX(-50%) rotate(-45deg);
+  -ms-transform: translateX(-50%) rotate(-45deg);
+  -o-transform: translateX(-50%) rotate(-45deg);
+  transform: translateX(-50%) rotate(-45deg);
+}

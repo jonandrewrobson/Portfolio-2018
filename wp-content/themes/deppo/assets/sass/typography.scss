@@ -1,0 +1,279 @@
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+body,
+button,
+input,
+select,
+textarea {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  clear: both;
+}
+
+dfn,
+cite,
+em,
+i {
+  font-style: italic;
+}
+
+cite {
+  font-weight: 400;
+}
+
+blockquote {
+  margin: 2em 0;
+}
+
+address {
+  margin: 0 0 1.5em;
+}
+
+pre {
+  background: #eee;
+  font-family: "Courier 10 Pitch", Courier, monospace;
+  font-size: 15px;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  margin-bottom: 1.6em;
+  max-width: 100%;
+  overflow: auto;
+  padding: 1.6em;
+}
+
+code,
+kbd,
+tt,
+var {
+  font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+  font-size: 15px;
+  font-size: 0.9375rem;
+  background: #eee;
+  padding: 2px 6px;
+}
+
+abbr,
+acronym {
+  border-bottom: 1px dotted #666;
+  text-decoration: none;
+  cursor: help;
+}
+
+mark,
+ins {
+  background: #eee;
+  text-decoration: none;
+  padding: 2px 6px;
+}
+
+big {
+  font-size: 125%;
+}
+
+/*--------------------------------------------------------------
+## Family size weight
+--------------------------------------------------------------*/
+
+body {
+  font-family: 'HK Grotesk', 'Helvetica Neue', Helvetica,Verdana, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-font-smoothing: grayscale;
+}
+
+/* sizes */
+
+.slider-text-center .featured-slider h2.short,
+.slider-text-center .video-header-text.short,
+.single .entry-title.short {
+  font-size: 280px;
+  font-size: 17.5rem;
+  font-size: 14vw;
+}
+
+.slider-text-center .featured-slider h2.medium,
+.slider-text-center .video-header-text.medium,
+.single .entry-title.medium {
+  font-size: 180px;
+  font-size: 11.25rem;
+}
+
+.slider-text-center .featured-slider h2.long,
+.slider-text-center .video-header-text.long,
+.single .entry-title.long,
+.error-404.not-found .page-title,
+.search-no-results .page-title,
+.slider-page-header h1 {
+  font-size: 120px;
+  font-size: 7.5rem;
+}
+
+.slider-text-center .featured-slider h2.xtra-long,
+.slider-text-center .video-header-text.xtra-long,
+.single .entry-title.xtra-long {
+  font-size: 60px;
+  font-size: 3.75rem;
+}
+
+.single .entry-title,
+.page:not(.page-template) .entry-title,
+.single-jetpack-portfolio .post-nav-title {
+  font-size: 80px;
+  font-size: 5rem;
+}
+
+h1,
+.slick-dots-wrapper .count,
+.slick-dots-wrapper .current,
+.slick-dots li button,
+.comments-title,
+.comment-reply-title,
+.single-jetpack-portfolio .emphasis,
+.page .emphasis {
+  font-size: 4.5rem;
+
+  @media (min-width: 769px) and (max-width: 1024px) {
+      font-size: 3.5rem;
+  }
+
+  @media (max-width: 768px) {
+      font-size: 2.3rem;
+  }
+}
+  
+.archive-list .entry-title {
+  font-size: 66px;
+  font-size: 4.125rem;
+}
+
+h2,
+.page .contact-form input,
+.page .contact-form label,
+.page .contact-form select,
+.page .contact-form textarea,
+.page .contact-form .hiddendiv,
+.page .contact-submit input[type="submit"],
+.page .contact-form label.checkbox,
+.page .contact-form label.radio {
+  font-size: 60px;
+  font-size: 3.75rem;
+}
+
+h3,
+.search .archive-list .entry-title {
+  font-size: 48px;
+  font-size: 3rem;
+}
+
+h4,
+.search .search-list .entry-title,
+.page .contact-submit:after {
+  font-size: 36px;
+  font-size: 2.25rem;
+}
+
+h5,
+.comment-list .comment-reply-title,
+.comment-respond label,
+.form-submit input[type="submit"],
+.emphasis,
+blockquote,
+q {
+  font-size: 30px;
+  font-size: 1.875rem;
+}
+
+h6,
+.site-title,
+.view-post-link a,
+.slider-text-side .featured-slider h2,
+.slider-text-side .video-header-text,
+.single-post .post-nav-title,
+.info-toggle,
+.back-button,
+.paging-navigation .prev,
+.paging-navigation .next,
+body #infinite-handle span,
+body #jp-relatedposts h3.jp-relatedposts-headline,
+body #jp-relatedposts .jp-relatedposts-items-visual h4.jp-relatedposts-post-title,
+#jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post-title,
+body div#jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post .jp-relatedposts-post-title a,
+.portfolio-hover-title .portfolio-archive .row .featured-content + .entry-header h2 {
+  font-size: 24px;
+  font-size: 1.5rem;
+}
+
+.main-navigation ul,
+.single-post .entry-footer .author,
+.comment-list .comment-respond label,
+.paging-navigation,
+cite,
+body .contact-form input,
+body .contact-form label,
+body .contact-form select,
+body .contact-form textarea,
+body .contact-form .hiddendiv,
+body .contact-submit input[type="submit"],
+body .contact-form label.checkbox,
+body .contact-form label.radio {
+  font-size: 18px;
+}
+
+.widget-title,
+#jp-relatedposts .jp-relatedposts-items-visual .jp-relatedposts-post-nothumbs p.jp-relatedposts-post-excerpt,
+body .contact-submit:after {
+  font-size: 16px;
+}
+
+.site-info,
+.archive-wrapper .page-title span,
+.error-404  .page-title span,
+.comment-notes,
+.search-list .entry-meta,
+.comment-respond form > p.comment-subscription-form label {
+  font-size: 14px;
+}
+
+.widget_calendar caption,
+.site-description {
+  font-size: 13px;
+}
+
+#jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post-date,
+#jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post-context {
+  font-size: 12px;
+}
+
+.jetpack-social-navigation,
+.single-post .post-nav-text,
+.single-post .entry-footer .meta-text {
+  font-size: 11px;
+}
+
+.entry-meta,
+.comment-metadata,
+.comment-body .reply a {
+  font-size: 10px;
+}
+
+.jp-relatedposts-items {
+  font-size: 0;
+}
+
+/* weight */
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  font-weight: 700;
+}

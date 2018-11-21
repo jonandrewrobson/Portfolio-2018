@@ -1,0 +1,374 @@
+/*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
+.page-content .wp-smiley,
+.entry-content .wp-smiley,
+.comment-content .wp-smiley {
+  border: none;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 0;
+}
+
+/* Make sure embeds and iframes fit their containers. */
+embed,
+iframe,
+object {
+  max-width: 100%;
+}
+
+.featured-content {
+  font-size: 0;
+  user-select: none;
+}
+
+/*--------------------------------------------------------------
+## Captions
+--------------------------------------------------------------*/
+.wp-caption {
+  margin-bottom: 1.5em;
+  max-width: 100%;
+}
+
+.wp-caption img[class*="wp-image-"] {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wp-caption .wp-caption-text {
+  margin: 0.8075em 0;
+}
+
+.wp-caption-text {
+  text-align: center;
+}
+
+/*--------------------------------------------------------------
+## Galleries
+--------------------------------------------------------------*/
+.gallery {
+  margin-bottom: 1.5em;
+}
+
+.gallery-item {
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  width: 100%;
+}
+
+.gallery-columns-2 .gallery-item {
+  max-width: 50%;
+}
+
+.gallery-columns-3 .gallery-item {
+  max-width: 33.33%;
+}
+
+.gallery-columns-4 .gallery-item {
+  max-width: 25%;
+}
+
+.gallery-columns-5 .gallery-item {
+  max-width: 20%;
+}
+
+.gallery-columns-6 .gallery-item {
+  max-width: 16.66%;
+}
+
+.gallery-columns-7 .gallery-item {
+  max-width: 14.28%;
+}
+
+.gallery-columns-8 .gallery-item {
+  max-width: 12.5%;
+}
+
+.gallery-columns-9 .gallery-item {
+  max-width: 11.11%;
+}
+
+.gallery-caption {
+  display: block;
+}
+
+/*--------------------------------------------------------------
+## Jetpack overwrites
+--------------------------------------------------------------*/
+
+/* related */
+
+.related-holder {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.related-holder .jp-relatedposts-post:after {
+  display: none;
+  font-size: 12px;
+}
+
+div.sharedaddy .sd-social h3.sd-title:before,
+div#jp-relatedposts h3.jp-relatedposts-headline em:before {
+  display: none;
+}
+
+body div#jp-relatedposts {
+  margin-top: 5rem;
+  margin-bottom: 5em;
+}
+
+body div#jp-relatedposts h3.jp-relatedposts-headline {
+  margin-bottom: 1rem;
+}
+
+body div#jp-relatedposts div.jp-relatedposts-items,
+body div#jp-relatedposts div.jp-relatedposts-items-visual {
+  margin-right: 0;
+  text-align: center;
+}
+
+body div#jp-relatedposts div.jp-relatedposts-items-visual .jp-relatedposts-post,
+body div#jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post {
+  display: inline-block;
+  float: none;
+  padding-right: 0;
+  opacity: 1;
+  text-align: left;
+  vertical-align: top;
+  width: 25%;
+  max-width: 350px;
+}
+
+body div#jp-relatedposts div.jp-relatedposts-items-visual .jp-relatedposts-post:nth-child(1),
+body div#jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post:nth-child(1) {
+  float: left;
+}
+
+body div#jp-relatedposts div.jp-relatedposts-items-visual .jp-relatedposts-post:nth-child(3),
+body div#jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post:nth-child(3) {
+  float: right;
+}
+
+/* list */
+body div#jp-relatedposts .jp-relatedposts-items.jp-relatedposts-list .jp-relatedposts-post {
+  width: 30%;
+}
+body div#jp-relatedposts div.jp-relatedposts-list .jp-relatedposts-post {
+  clear: none;
+}
+body #jp-relatedposts .jp-relatedposts-list .jp-relatedposts-post img.jp-relatedposts-post-img {
+  max-width: 30%;
+  margin-right: 20px;
+}
+div#jp-relatedposts .jp-relatedposts-items.jp-relatedposts-list .jp-relatedposts-post .jp-relatedposts-post-title {
+  margin-top: 0px;
+}
+div#jp-relatedposts .jp-relatedposts-items.jp-relatedposts-list .jp-relatedposts-post > *:not(.jp-relatedposts-post-a) {
+  max-width: calc(60% - 20px);
+}
+
+div#jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post .jp-relatedposts-post-title {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 1.5em;
+  letter-spacing: .01em;
+}
+
+.jp-relatedposts-post .jp-relatedposts-post-a {
+  border: none;
+  display: block;
+}
+
+div#jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post img.jp-relatedposts-post-img {
+  margin-bottom: 40px;
+  will-change: opacity;
+}
+
+div#jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post:hover img.jp-relatedposts-post-img {
+  opacity: .7;
+}
+
+body div#jp-relatedposts div.jp-relatedposts-items-visual h4.jp-relatedposts-post-title {
+  letter-spacing: 0.2px;
+  line-height: 1.5em;
+}
+
+
+body div#jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post .jp-relatedposts-post-title a {
+  border: none;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+body div#jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post .jp-relatedposts-post-context,
+body div#jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post .jp-relatedposts-post-date {
+  display: inline-block;
+  margin: 0;
+  letter-spacing: 0;
+  opacity: 1;
+}
+
+body div#jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post .jp-relatedposts-post-date {
+  margin-right: 5px;
+}
+
+body div#jp-relatedposts div.jp-relatedposts-items-visual .jp-relatedposts-post-nothumbs .jp-relatedposts-post-context,
+body div#jp-relatedposts div.jp-relatedposts-items-visual .jp-relatedposts-post-nothumbs .jp-relatedposts-post-date {
+  margin-top: 0;
+}
+
+div#jp-relatedposts div.jp-relatedposts-items-visual div.jp-relatedposts-post-thumbs p.jp-relatedposts-post-excerpt {
+  display: none;
+}
+
+div#jp-relatedposts div.jp-relatedposts-items .jp-relatedposts-post .jp-relatedposts-post-title a:hover,
+body #jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post:hover .jp-relatedposts-post-title a {
+  text-decoration: none;
+}
+
+div#jp-relatedposts div.jp-relatedposts-items .jp-relatedposts-post .jp-relatedposts-post-context {
+  opacity: 1;
+}
+
+
+/* thickbox video */
+
+
+/* Contact form */
+
+div:not(:first-child) form.contact-form {
+  margin-top: 60px;
+}
+
+div:not(:last-child) form.contact-form {
+  margin-bottom: 60px;
+}
+
+form.contact-form > div {
+  margin-bottom: 40px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-align-items: baseline;
+  align-items: baseline;
+}
+
+form.contact-form > div > * {
+  flex: 1 0 auto;
+  margin-bottom: 0.5em;
+}
+
+body .contact-form label {
+  flex: 0 0 auto;
+  font-weight: 500;
+  line-height: normal;
+  padding-right: 1em;
+}
+
+body .contact-form label span {
+  font-size: 0;
+  color: rgba(0,0,0,0.4);
+}
+
+body .contact-form label span:before {
+  content: '*';
+  font-size: 20px;
+  position: relative;
+  top: -0.5em;
+}
+
+.page .contact-form label span:before {
+  font-size: 40px;
+}
+
+body .contact-form input[type=email],
+body .contact-form input[type=text] {
+  max-width: none;
+}
+
+body .contact-form textarea,
+body .contact-form .hiddendiv {
+  min-height: 1.22em;
+  height: 1.22em;
+  width: auto;
+  padding-top: 0;
+  margin-top: -7px !important;
+}
+
+body .contact-form label.checkbox,
+body .contact-form label.radio {
+  margin-bottom: 1em;
+  margin-top: 0.5em;
+  font-weight: 500;
+  line-height: 1;
+  cursor: pointer;
+}
+
+body .contact-form input,
+body .contact-submit input,
+body .contact-form textarea,
+body .contact-form .hiddendiv {
+  letter-spacing: -0.02em;
+  font-weight: 500;
+  line-height: normal;
+  padding: 0;
+}
+
+body .contact-submit {
+  display: inline-block;
+}
+
+body .contact-submit input[type="submit"] {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: initial;
+  font-weight: 700;
+}
+
+body .contact-submit:after {
+  padding-left: 1em;
+  display: inline-block;
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
+  -ms-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+}
+
+@-webkit-keyframes reveal {
+  0% {
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes reveal {
+  0% {
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

@@ -1,0 +1,28 @@
+#gallery-metabox-list li {
+  float: left;
+  width: 150px;
+  text-align: center;
+  margin: 10px 10px 10px 0;
+  cursor: move;
+}
+
+#gallery-metabox-list .image-preview {
+	margin-bottom: 10px;
+}
+
+#gallery-metabox-list .remove-image {
+	color: tomato;
+	text-decoration: none;
+}
+
+#gallery-metabox-list .remove-image.focus,
+#gallery-metabox-list .remove-image.hover,
+#gallery-metabox-list .remove-image:focus,
+#gallery-metabox-list .remove-image:hover {
+    color: salmon;
+}
+
+#gallery-metabox-list .remove-image:before {
+	content: "\f153";
+	font: 400 24px/24px dashicons;
+}
