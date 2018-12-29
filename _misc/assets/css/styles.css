@@ -14,10 +14,11 @@ body {
   text-align: center;
   background: white; }
 
-/* Card for articles */
+/* Add a card effect for articles */
 .card {
   background-color: white;
   padding: 20px;
   margin-top: 20px; }
-  .card h3 {
-    color: pink; }
+
+.misc {
+  height: 100px; }

@@ -1,5 +1,4 @@
 var gulp        = require('gulp');
-var uglify      = require('gulp-uglify');
 var sass        = require('gulp-sass');
 var plumber     = require('gulp-plumber');
 var browserSync = require('browser-sync').create();
@@ -7,35 +6,33 @@ var browserSync = require('browser-sync').create();
 
 // Scripts Task
 gulp.task('scripts', function(cb){
-  return gulp.src('js/*.js')
+  return gulp.src('assets/js/*.js')
     .pipe(plumber())
-    .pipe(uglify())
-    .pipe(gulp.dest('build/minjs'))
+    .pipe(gulp.dest('assets/minjs'))
     cb
 });
 
 // Compile sass into CSS & auto-inject into browsers
-
 gulp.task('styles', function(cb){
-  return gulp.src('scss/*.scss')
+  return gulp.src('assets/scss/*.scss')
     .pipe(plumber())
     .pipe(sass())
-    .pipe(gulp.dest('build/css/'))
+    .pipe(gulp.dest('assets/css/'))
     .pipe(browserSync.stream());
     cb
 });
 
 // Static Server + watching scss/html files
-gulp.task('serve', function(cb) {
+gulp.task('serve', function(done) {
     browserSync.init({
-        server: "./journal"
+        server: "journal"
     });
-    cb
+    done
 });
 
 gulp.task('watch', function(cb) {
-	gulp.watch("js/*.js", gulp.parallel('scripts'));
-	gulp.watch("scss/*.scss", gulp.parallel('styles'));
+	gulp.watch("assets.js/*.js", gulp.parallel('scripts'));
+	gulp.watch("assets/scss/*.scss", gulp.parallel('styles'));
     gulp.watch("journal/*.html").on('change', browserSync.reload);
     cb
 });
