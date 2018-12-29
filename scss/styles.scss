@@ -1,0 +1,31 @@
+// Global Styles
+
+* {
+	box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+}
+
+/* Card for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+
+   h3 {
+    color: pink;
+   }
+}

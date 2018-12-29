@@ -17,7 +17,16 @@
   },
   "homepage": "https://github.com/jonandrewrobson/Portfolio-2018#readme",
   "devDependencies": {
+    "browser-sync": "^2.26.3",
     "gulp": "^4.0.0",
-    "gulp-sass": "^4.0.2"
+    "gulp-clean-css": "^4.0.0",
+    "gulp-connect": "^5.7.0",
+    "gulp-livereload": "^4.0.1",
+    "gulp-ruby-sass": "^4.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.1"
+  },
+  "dependencies": {
+    "gulp-plumber": "^1.2.1"
   }
 }
