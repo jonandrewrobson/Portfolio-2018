@@ -107,3 +107,4 @@ wp-content/db.php
 # Binaries installed by EWWW Image Optimizer plugin #
 #####################################################
 wp-content/ewww
+node_modules/
