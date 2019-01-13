@@ -1,3 +1,4 @@
+
 * {
 	box-sizing: border-box;
 }
@@ -17,13 +18,13 @@ body {
   background: white;
 }
 
-/* Add a card effect for articles */
+/* Card for articles */
 .card {
    background-color: white;
    padding: 20px;
    margin-top: 20px;
-}
 
-.misc {
-  height: 100px;
+   h3 {
+    color: pink;
+   }
 }
