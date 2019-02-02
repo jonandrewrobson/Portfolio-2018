@@ -3,7 +3,6 @@ var sass        = require('gulp-sass');
 var plumber     = require('gulp-plumber');
 var browserSync = require('browser-sync').create();
 
-
 // Scripts Task
 gulp.task('scripts', function(cb){
   return gulp.src('assets/js/*.js')
@@ -12,12 +11,13 @@ gulp.task('scripts', function(cb){
     cb
 });
 
-// Compile sass into CSS & auto-inject into browsers
+// Sass into CSS & auto-inject into browser
+// Compile sasers
 gulp.task('styles', function(cb){
   return gulp.src('assets/scss/*.scss')
     .pipe(plumber())
     .pipe(sass())
-    .pipe(gulp.dest('assets/css/'))
+    .pipe(gulp.dest())
     .pipe(browserSync.stream());
     cb
 });
