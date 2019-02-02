@@ -14,14 +14,14 @@ gulp.task('scripts', function(cb){
 // Sass into CSS & auto-inject into browser
 // Compile sasers
 gulp.task('styles', function(cb){
-  return gulp.src('assets/scss/*.scss')
-    .pipe(plumber())
-    .pipe(sass())
-    .pipe(gulp.dest())
-    .pipe(browserSync.stream());
-    cb
-});
-
+    return gulp.src('assets/scss/*.scss')
+      .pipe(plumber())
+      .pipe(sass())
+      .pipe(gulp.dest('assets/css'))
+      .pipe(browserSync.stream());
+      cb
+  });
+  
 // Static Server + watching scss/html files
 gulp.task('serve', function(done) {
     browserSync.init({
@@ -29,14 +29,15 @@ gulp.task('serve', function(done) {
     });
     done
 });
-
-gulp.task('watch', function(cb) {
-	gulp.watch("assets.js/*.js", gulp.parallel('scripts'));
-	gulp.watch("assets/scss/*.scss", gulp.parallel('styles'));
-    gulp.watch("journal/*.html").on('change', browserSync.reload);
-    cb
-});
-
-
-// Gulp Default Task
-gulp.task("default", gulp.parallel('scripts', 'styles' , 'watch' , 'serve'));
+  
+  gulp.task('watch', function(cb) {
+      gulp.watch("assets.js/*.js", gulp.parallel('scripts'));
+      gulp.watch("assets/scss/*.scss", gulp.parallel('styles'));
+      gulp.watch("journal/*.html").on('change', browserSync.reload);
+      cb
+  });
+  
+  
+  // Gulp Default Task
+  gulp.task("default", gulp.parallel('scripts', 'styles' , 'watch' , 'serve'));
+  
