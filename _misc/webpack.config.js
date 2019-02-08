@@ -1,9 +1,9 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
-  mode: 'development',
   entry: './src/index.js',
   devServer: { contentBase: './dist' },
   devtool: 'inline-source-map',
@@ -13,19 +13,25 @@ module.exports = {
     publicPath: '/'
   },
   plugins: [ 
-    new HtmlWebpackPlugin(
-        { title: 'Output Management' }),
-    new CleanWebpackPlugin(['dist'])
+    new HtmlWebpackPlugin({ title: 'Output Management' }), // Rebuilds index file to include bundled scripts
+		new CleanWebpackPlugin(['dist']), // Cleans up the dist folder to include only files being used in build
+		new MiniCssExtractPlugin({ filename: "[name].css", chunkFilename: "[id].css" // Extract css from sass
+    })
     ],
     module: {
 		rules: [
 			{
-				test: /\.css$/,
-				use: [
-					'style-loader',
-					'css-loader'
-				]
-			},
+        test: /\.css$/,
+        use: [MiniCssExtractPlugin.loader, "css-loader", "postcss-loader"]
+      },
+      {
+        test: /\.scss$/,
+        use: [
+          MiniCssExtractPlugin.loader,
+          "css-loader",
+          "sass-loader"
+        ]
+      },
 			{
 				test: /\.(png|svg|jpg|gif)$/,
 				use: [
