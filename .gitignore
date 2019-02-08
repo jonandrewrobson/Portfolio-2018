@@ -69,9 +69,7 @@ deploy.ini
 node_modules
 parameters.yml
 error_log
-_misc/gulpfile.js
 _misc/package-lock.json
-_misc/package.json
 
 
 # Ignore Other VCSs #
