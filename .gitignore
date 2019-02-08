@@ -69,6 +69,10 @@ deploy.ini
 node_modules
 parameters.yml
 error_log
+_misc/gulpfile.js
+_misc/package-lock.json
+_misc/package.json
+
 
 # Ignore Other VCSs #
 #####################
@@ -107,3 +111,4 @@ wp-content/db.php
 # Binaries installed by EWWW Image Optimizer plugin #
 #####################################################
 wp-content/ewww
+node_modules/
