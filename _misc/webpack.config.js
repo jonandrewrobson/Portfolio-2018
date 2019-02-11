@@ -13,9 +13,19 @@ module.exports = {
     publicPath: '/'
   },
   plugins: [ 
-    new HtmlWebpackPlugin({ title: 'Output Management' }), // Rebuilds index file to include bundled scripts
+    new HtmlWebpackPlugin({ 
+      title: 'Output Management'
+    }), // Rebuilds index file to include bundled scripts
+    new HtmlWebpackPlugin({
+      title: 'Test HTML',
+      filename: 'test.html',
+      template: 'src/test.html',
+      chunks: []
+    }), 
 		new CleanWebpackPlugin(['dist']), // Cleans up the dist folder to include only files being used in build
-		new MiniCssExtractPlugin({ filename: "[name].css", chunkFilename: "[id].css" // Extract css from sass
+		new MiniCssExtractPlugin({ 
+      filename: "[name].css", 
+      chunkFilename: "[id].css" // Extract css from sass
     })
     ],
     module: {
