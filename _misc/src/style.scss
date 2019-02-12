@@ -1,17 +1,265 @@
+/* CSS RESET START */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    -webkit-box-sizing: inherit;
+  }
+/* CSS RESET END */
+
 @font-face {
-    font-family: 'MyFont';
+    font-family: 'Inconsolata', monospace;
     src: url('./my-font.woff') format('woff');
 }
 
+*,
+h1,
+h2,
+h3,
+p {
+    font-family: 'Inconsolata', monospace;
+}
+
 body {
-    background-color: honeydew;
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+
+.wrapper {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    margin: 40px;
+    border: 1px solid red;
+    background-color: white;
+    grid-template: 50px repeat(4,1fr) / repeat(4, 1fr);
+    padding: 10px 0 10px 20px;
+
+    h1 {
+        grid-column: 1 / 2;
+        color: #333;
+        // text-shadow:
+        // -1px -1px 0 #000,  
+        // 1px -1px 0 #000,
+        // -1px 1px 0 #000,
+        // 1px 1px 0 #000;
+        font-size: 1.4rem;
+    }
+
+    .date-range {
+        grid-column: 1 / 2;
+        grid-row: 2 / 6;
+        background-color: white;
+
+        h2 {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .months {
+            padding: 10px 0;
+            font-family: sans-serif;
+            font-size: .9rem;
+            line-height: 1.5rem;
+        }
+    }
+
+    .content {
+        grid-column: 2 / 5;
+        grid-row: 1 / 6;
+        background-color: aquamarine;
+    }
+
+    
+    }
 }
 
-.hello {
-    color: green;
-    background: url('./icon.png');
-    background-repeat: no-repeat;
-    font-family: 'MyFont';
-    font-size: 5em;
+/************************ 
+* Vertical Menu Accordion 
+************************/
+
+/*
+ * Link-style
+ */
+ .menu a {
+    cursor: pointer;
+}
+.menu a:link {
+    color: #39596C;
+    text-decoration: none;
+}
+.menu a:visited {
+    color: #95539e;
+}
+.menu a:active {
+    color: red;
 }
 
+/*
+ * List-style
+ * Definition Term-style
+ */
+ .menu ul,
+ .menu ol {
+     margin-top: 15px;
+     margin-bottom: 15px;
+     list-style-position: inside;
+     padding: 0 8px;
+ }
+ .menu ul ul,
+ .menu ul ol,
+ .menu ol ol,
+ .menu ol ul {
+     margin-top: 0;
+     margin-bottom: 0;
+     padding-left: 0;
+     padding-right: 0;
+ }
+ .menu li {
+     line-height: 150%;
+ }
+ 
+ /*
+  * Menu styles: basic defaults
+  */
+ .menu a,
+ .menu a:visited {
+     color: #39596C;
+     text-decoration: none;
+ }
+ .menu .container {
+     margin: 0 auto;
+     padding: 0;
+ }
+ .menu ul {
+     list-style: none;
+ }
+ .menu ul ul ul {
+     padding-left: 16px;
+ }
+ .menu a {
+     line-height: 250%;
+     padding: 0 24px;
+     border-bottom: none;
+     display: block;
+ }
+ .menu > ul > li > a {
+     background-color: #EFEFEF;
+ }
+ .menu li.open > a {
+     color: #DD6D66;
+ }
+ .menu > ul > li > ul > li:not(:last-child) {
+     border-bottom: #DDDDDD 1px dashed;
+ }
+ .menu > ul > li:not(.open) > ul > li:last-child {
+     border-bottom: #DDDDDD 1px solid;
+ }
+ .menu.vertical > ul > li > ul > li:last-child {
+     border-bottom: #DDDDDD 1px solid;
+ }
+ .menu ul li a:not(:only-child):before {
+     content: '\f196';
+     font-family: 'FontAwesome';
+     margin-right: 4px;
+     margin-left: -1em;
+ }
+ .menu ul li.open > a:not(:only-child):before {
+     content: '\f147';
+ }
+ .menu ul li a[href="/"]:before,
+ .menu ul li a[href^="/index."]:before {
+     content: '\f015';
+     font-family: 'FontAwesome';
+     margin-right: 4px;
+     margin-left: -1em;
+ }
+ 
+ .menu.vertical {
+     margin: 15px auto;
+     border-top: #DDDDDD 1px solid;
+ }
+ .menu.vertical .container {
+     background-color: #FFFFFF;
+ }
+ .menu.vertical > ul > li > a {
+     border-bottom: #DDDDDD 1px solid;
+ }
+ 
+ .menu.close ul ul {
+     display: none;
+ }
+ .menu .open > ul {
+ }
+
+  
+.header {
+grid-row: 1 / 2;
+grid-column: 1 / 5;
+}
+
+.footer {
+grid-row: 6 / 7;
+grid-column: 1 / 5;
+}
+
+/* OTHER STYLES */
+
+.item {
+border: 1px solid #171717;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 14px;
+// font-family: 'MyFont';
+}
+
+  
