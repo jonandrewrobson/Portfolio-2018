@@ -27,10 +27,10 @@ module.exports = {
       filename: "[name].css", 
       chunkFilename: "[id].css" // Extract css from sass
     })
-    ],
-    module: {
-		rules: [
-			{
+  ],
+  module: {
+    rules: [
+      {
         test: /\.css$/,
         use: [MiniCssExtractPlugin.loader, "css-loader", "postcss-loader"]
       },
@@ -42,18 +42,18 @@ module.exports = {
           "sass-loader"
         ]
       },
-			{
-				test: /\.(png|svg|jpg|gif)$/,
-				use: [
-					'file-loader'
-				]
-			},
-			{
-				test: /\.(woff|woff2|eot|ttf|otf)$/,
-				use: [
-					'file-loader'
-				]
-			}
-		]
-	}
+      {
+        test: /\.(png|svg|jpg|gif)$/,
+        use: [
+          'file-loader'
+        ]
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/,
+        use: [
+          'file-loader'
+        ]
+      },
+    ]
+  }
 };
